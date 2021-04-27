@@ -299,7 +299,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вам нравится быть с друзьями. Вы окружаете себя людьми, которые вам нравятся и всегда готовы помочь." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gty-ju-uo9">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вам нравится быть с друзьями. Вы окружаете себя людьми, которые вам нравятся и всегда готовы помочь." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gty-ju-uo9">
                                         <rect key="frame" x="2.5" y="76" width="283" height="81.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -317,12 +317,16 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Результат" id="dFb-UN-hqt">
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="9fz-gH-QoX">
+                        <barButtonItem key="rightBarButtonItem" title="Завершить" id="9fz-gH-QoX">
                             <connections>
                                 <segue destination="XDz-4D-cO8" kind="unwind" unwindAction="unwindWithSegue:" id="Ame-tx-s7u"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="animalDefinitionLabel" destination="Gty-ju-uo9" id="Ql6-Ra-sVb"/>
+                        <outlet property="animalTypeLabel" destination="fOL-Dy-vvC" id="3IQ-x0-VpR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rP4-RY-57U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="XDz-4D-cO8" userLabel="Exit" sceneMemberID="exit"/>
